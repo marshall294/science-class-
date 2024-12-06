@@ -25,7 +25,7 @@
             border-radius: 8px;
         }
         h1, h2 {
-            color: #333;
+            color: white;
         }
         h3 {
             color: #555;
@@ -42,12 +42,37 @@
             border-left: 4px solid #5d8aa8;
             margin-bottom: 15px;
         }
+        .media-container {
+            text-align: center;
+            margin: 20px 0;
+            position: relative;
+        }
+        .media-container img, .media-container video {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+        }
+        .caption-frame {
+            text-align: center;
+            margin-top: 10px;
+            font-style: italic;
+            color: #555;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 5px;
+            border-radius: 4px;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Matter and Its Properties - Student Notes</h1>
+        <h1>Mathcloud Tutorial - Matter and Its Properties</h1>
     </header>
 
     <main>
@@ -64,6 +89,11 @@
                 <li><strong>Examples:</strong> Ice, metal, wood.</li>
             </ul>
 
+            <div class="media-container">
+                <img src="https://th.bing.com/th/id/R.f6f687560b05ab99e34ca7e0ad41cf91?rik=pcjRlVXaG91n0w&pid=ImgRaw&r=0" alt="Solid particles arrangement">
+                <div class="caption-frame">Particles in a solid (ice).</div>
+            </div>
+
             <h3>Liquid</h3>
             <ul>
                 <li><strong>Shape:</strong> Indefinite, takes the shape of the container.</li>
@@ -72,6 +102,11 @@
                 <li><strong>Movement:</strong> Particles can move and flow, allowing liquids to change shape.</li>
                 <li><strong>Examples:</strong> Water, oil, juice.</li>
             </ul>
+
+            <div class="media-container">
+                <img src="https://th.bing.com/th/id/R.f6f687560b05ab99e34ca7e0ad41cf91?rik=pcjRlVXaG91n0w&pid=ImgRaw&r=0" alt="Liquid particles arrangement">
+                <div class="caption-frame">Particles in a liquid (water).</div>
+            </div>
 
             <h3>Gas</h3>
             <ul>
@@ -82,12 +117,21 @@
                 <li><strong>Examples:</strong> Air, oxygen, carbon dioxide.</li>
             </ul>
 
+            <div class="media-container">
+                <img src="https://th.bing.com/th/id/R.f6f687560b05ab99e34ca7e0ad41cf91?rik=pcjRlVXaG91n0w&pid=ImgRaw&r=0" alt="Gas particles arrangement">
+                <div class="caption-frame">Particles in a gas (air).</div>
+            </div>
+
             <h3>Plasma (Bonus State)</h3>
             <ul>
                 <li><strong>Shape & Volume:</strong> Indefinite.</li>
                 <li><strong>Particles:</strong> Very high-energy particles, some of which are charged (ionized).</li>
                 <li><strong>Examples:</strong> The sun, lightning, neon lights.</li>
             </ul>
+            <div class="media-container">
+                <img src="https://th.bing.com/th/id/OIP.ik4JpSFVWFqq1e75vWaPtQHaEu?rs=1&pid=ImgDetMain" alt="Plasma example (sun)">
+                <div class="caption-frame">Plasma state (The Sun).</div>
+            </div>
         </section>
 
         <section>
@@ -100,6 +144,14 @@
                 <li><strong>Temperature:</strong> Happens at the melting point (e.g., 0°C for ice).</li>
                 <li><strong>Energy:</strong> Heat energy is absorbed by the solid, causing the particles to vibrate more and eventually break free from their fixed positions.</li>
             </ul>
+
+            <div class="media-container">
+                <video width="100%" controls>
+                    <source src="ice.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="caption-frame">Watch how ice melts into water.</div>
+            </div>
 
             <h3>Freezing (Liquid → Solid)</h3>
             <ul>
@@ -115,6 +167,14 @@
                 <li><strong>Energy:</strong> Heat energy is absorbed, causing the particles to move faster and overcome the forces holding them together, turning the liquid into vapor.</li>
             </ul>
 
+            <div class="media-container">
+                <video width="100%" controls>
+                    <source src="water.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="caption-frame">See the boiling process of water.</div>
+            </div>
+
             <h3>Condensation (Gas → Liquid)</h3>
             <ul>
                 <li><strong>Description:</strong> The process where a gas turns into a liquid.</li>
@@ -128,11 +188,21 @@
                 <li><strong>Example:</strong> Dry ice (solid carbon dioxide) turning into gas.</li>
             </ul>
 
+            <div class="media-container">
+                <img src="https://th.bing.com/th/id/OIP.nA0QZlt62DBLq1lZBBQ6mAHaEJ?rs=1&pid=ImgDetMain" alt="Sublimation example (dry ice)">
+                <div class="caption-frame">Sublimation of dry ice.</div>
+            </div>
+
             <h3>Deposition (Gas → Solid without liquid phase)</h3>
             <ul>
                 <li><strong>Description:</strong> The process where a gas turns directly into a solid without becoming a liquid.</li>
                 <li><strong>Example:</strong> Frost forming from water vapor on a cold surface.</li>
             </ul>
+
+            <div class="media-container">
+                <img src="https://media.gettyimages.com/id/523065695/photo/cotoneaster-cotoneaster-sp-with-the-first-frost-on-leaves-and-berries-untergroeningen-baden.jpg?s=612x612&w=gi&k=20&c=tH_URYu_0o-75JLWbtzV3V1fRNZoaHNRgSzVtJUtY6s=" alt="Deposition (frost forming)">
+                <div class="caption-frame">Deposition of frost from water vapor.</div>
+            </div>
         </section>
 
         <section>
@@ -148,19 +218,22 @@
                 </li>
             </ul>
 
+            <div class="media-container">
+                <img src="https://th.bing.com/th/id/OIP.ii74s7dRyEeUvu6RBH9eqQHaE8?rs=1&pid=ImgDetMain" alt="Heterogeneous mixture">
+                <div class="caption-frame">Example of a heterogeneous mixture.</div>
+            </div>
+
             <h3>Solutions</h3>
             <p>A solution is a type of homogeneous mixture where one substance (the solute) is dissolved in another substance (the solvent).</p>
             <ul>
                 <li><strong>Example:</strong> Salt dissolved in water (salt is the solute, and water is the solvent).</li>
-                <li><strong>Solubility:</strong> The ability of a substance to dissolve in a solvent. It depends on temperature, pressure, and the nature of the solute and solvent.
-                    <ul>
-                        <li><strong>High solubility:</strong> A lot of solute can dissolve (e.g., sugar in water).</li>
-                        <li><strong>Low solubility:</strong> Only a small amount of solute can dissolve (e.g., oil in water).</li>
-                    </ul>
-                </li>
+                <li><strong>Solubility:</strong> The ability of a substance to dissolve in a solvent. It depends on temperature, pressure, and the nature of the solute and solvent.</li>
             </ul>
 
             <h3>Concentration</h3>
             <p>The concentration of a solution refers to how much solute is dissolved in a given amount of solvent.</p>
-            <ul>
-                <l
+        </section>
+    </main>
+
+</body>
+</html>
