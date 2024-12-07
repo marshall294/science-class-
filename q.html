@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment - Matter and Its Properties</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        main {
+            padding: 20px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 8px;
+        }
+        h1 {
+            color: #333;
+        }
+        .question {
+            margin: 20px 0;
+        }
+        .question label {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .question input {
+            margin-right: 10px;
+        }
+        .question .options {
+            margin-left: 20px;
+        }
+        .button {
+            background-color: #5d8aa8;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #4b7a8d;
+        }
+        #score {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Assessment - Matter and Its Properties</h1>
+    </header>
+
+    <main>
+        <form id="assessmentForm">
+            <!-- Question 1 -->
+            <div class="question">
+                <label>1. What is the state of matter where particles are tightly packed and vibrate in place?</label><br>
+                <div class="options">
+                    <input type="radio" name="q1" value="solid"> Solid<br>
+                    <input type="radio" name="q1" value="liquid"> Liquid<br>
+                    <input type="radio" name="q1" value="gas"> Gas
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <label>2. At what temperature does water freeze?</label><br>
+                <div class="options">
+                    <input type="radio" name="q2" value="0"> 0°C<br>
+                    <input type="radio" name="q2" value="100"> 100°C<br>
+                    <input type="radio" name="q2" value="50"> 50°C
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <label>3. What process occurs when a gas turns directly into a solid?</label><br>
+                <div class="options">
+                    <input type="radio" name="q3" value="deposition"> Deposition<br>
+                    <input type="radio" name="q3" value="condensation"> Condensation<br>
+                    <input type="radio" name="q3" value="evaporation"> Evaporation
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <label>4. Which of the following is an example of a homogeneous mixture?</label><br>
+                <div class="options">
+                    <input type="radio" name="q4" value="salad"> Salad<br>
+                    <input type="radio" name="q4" value="air"> Air<br>
+                    <input type="radio" name="q4" value="sand"> Sand
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <label>5. What is the process called when a solid turns into a liquid?</label><br>
+                <div class="options">
+                    <input type="radio" name="q5" value="melting"> Melting<br>
+                    <input type="radio" name="q5" value="freezing"> Freezing<br>
+                    <input type="radio" name="q5" value="boiling"> Boiling
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question">
+                <label>6. What is an example of a heterogeneous mixture?</label><br>
+                <div class="options">
+                    <input type="radio" name="q6" value="air"> Air<br>
+                    <input type="radio" name="q6" value="salad"> Salad<br>
+                    <input type="radio" name="q6" value="steel"> Steel
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question">
+                <label>7. What happens to the particles in a substance during condensation?</label><br>
+                <div class="options">
+                    <input type="radio" name="q7" value="they move faster"> They move faster<br>
+                    <input type="radio" name="q7" value="they slow down and come together"> They slow down and come together<br>
+                    <input type="radio" name="q7" value="they stay the same"> They stay the same
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question">
+                <label>8. What is an example of a substance that undergoes sublimation?</label><br>
+                <div class="options">
+                    <input type="radio" name="q8" value="water"> Water<br>
+                    <input type="radio" name="q8" value="dry ice"> Dry Ice<br>
+                    <input type="radio" name="q8" value="salt"> Salt
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question">
+                <label>9. At what temperature does water boil?</label><br>
+                <div class="options">
+                    <input type="radio" name="q9" value="0"> 0°C<br>
+                    <input type="radio" name="q9" value="100"> 100°C<br>
+                    <input type="radio" name="q9" value="50"> 50°C
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question">
+                <label>10. Which of the following is a characteristic of a liquid?</label><br>
+                <div class="options">
+                    <input type="radio" name="q10" value="definite shape"> Definite shape<br>
+                    <input type="radio" name="q10" value="indefinite shape"> Indefinite shape<br>
+                    <input type="radio" name="q10" value="no volume"> No volume
+                </div>
+            </div>
+
+            <!-- Additional Questions -->
+            <!-- Question 11 -->
+            <div class="question">
+                <label>11. What happens to the volume of a gas when its temperature increases?</label><br>
+                <div class="options">
+                    <input type="radio" name="q11" value="decreases"> Decreases<br>
+                    <input type="radio" name="q11" value="increases"> Increases<br>
+                    <input type="radio" name="q11" value="stays the same"> Stays the same
+                </div>
+            </div>
+
+            <!-- Question 12 -->
+            <div class="question">
+                <label>12. What is the change of state from a liquid to a gas called?</label><br>
+                <div class="options">
+                    <input type="radio" name="q12" value="evaporation"> Evaporation<br>
+                    <input type="radio" name="q12" value="condensation"> Condensation<br>
+                    <input type="radio" name="q12" value="freezing"> Freezing
+                </div>
+            </div>
+
+            <!-- Question 13 -->
+            <div class="question">
+                <label>13. What happens when you increase the pressure on a gas?</label><br>
+                <div class="options">
+                    <input type="radio" name="q13" value="volume increases"> Volume increases<br>
+                    <input type="radio" name="q13" value="volume decreases"> Volume decreases<br>
+                    <input type="radio" name="q13" value="temperature decreases"> Temperature decreases
+                </div>
+            </div>
+
+            <!-- Question 14 -->
+            <div class="question">
+                <label>14. Which of the following is an example of a pure substance?</label><br>
+                <div class="options">
+                    <input type="radio" name="q14" value="air"> Air<br>
+                    <input type="radio" name="q14" value="water"> Water<br>
+                    <input type="radio" name="q14" value="salad"> Salad
+                </div>
+            </div>
+
+            <!-- Question 15 -->
+            <div class="question">
+                <label>15. What happens during the process of sublimation?</label><br>
+                <div class="options">
+                    <input type="radio" name="q15" value="solid turns to liquid"> Solid turns to liquid<br>
+                    <input type="radio" name="q15" value="solid turns to gas"> Solid turns to gas<br>
+                    <input type="radio" name="q15" value="liquid turns to gas"> Liquid turns to gas
+                </div>
+            </div>
+
+            <!-- Question 16 -->
+            <div class="question">
+                <label>16. Which state of matter has the greatest kinetic energy?</label><br>
+                <div class="options">
+                    <input type="radio" name="q16" value="solid"> Solid<br>
+                    <input type="radio" name="q16" value="liquid"> Liquid<br>
+                    <input type="radio" name="q16" value="gas"> Gas
+                </div>
+            </div>
+
+            <!-- Question 17 -->
+            <div class="question">
+                <label>17. What is an example of a physical change?</label><br>
+                <div class="options">
+                    <input type="radio" name="q17" value="burning paper"> Burning paper<br>
+                    <input type="radio" name="q17" value="melting ice"> Melting ice<br>
+                    <input type="radio" name="q17" value="rusting iron"> Rusting iron
+                </div>
+            </div>
+
+            <!-- Question 18 -->
+            <div class="question">
+                <label>18. Which of the following occurs when water evaporates?</label><br>
+                <div class="options">
+                    <input type="radio" name="q18" value="gas turns to liquid"> Gas turns to liquid<br>
+                    <input type="radio" name="q18" value="liquid turns to gas"> Liquid turns to gas<br>
+                    <input type="radio" name="q18" value="liquid turns to solid"> Liquid turns to solid
+                </div>
+            </div>
+
+            <!-- Question 19 -->
+            <div class="question">
+                <label>19. What is the process by which a solid changes directly into a gas?</label><br>
+                <div class="options">
+                    <input type="radio" name="q19" value="sublimation"> Sublimation<br>
+                    <input type="radio" name="q19" value="deposition"> Deposition<br>
+                    <input type="radio" name="q19" value="melting"> Melting
+                </div>
+            </div>
+
+            <!-- Question 20 -->
+            <div class="question">
+                <label>20. What is the characteristic of gas particles?</label><br>
+                <div class="options">
+                    <input type="radio" name="q20" value="tight and organized"> Tight and organized<br>
+                    <input type="radio" name="q20" value="spread out and move freely"> Spread out and move freely<br>
+                    <input type="radio" name="q20" value="stay in one place"> Stay in one place
+                </div>
+            </div>
+
+            <button type="button" class="button" onclick="calculateScore()">Submit</button>
+        </form>
+
+        <div id="score"></div>
+    </main>
+
+    <script>
+        function calculateScore() {
+            var score = 0;
+
+            // Get form data
+            var form = document.forms['assessmentForm'];
+
+            // Questions and Answers
+            var answers = {
+                q1: 'solid',
+                q2: '0',
+                q3: 'deposition',
+                q4: 'air',
+                q5: 'melting',
+                q6: 'salad',
+                q7: 'they slow down and come together',
+                q8: 'dry ice',
+                q9: '100',
+                q10: 'indefinite shape',
+                q11: 'increases',
+                q12: 'evaporation',
+                q13: 'volume decreases',
+                q14: 'water',
+                q15: 'solid turns to gas',
+                q16: 'gas',
+                q17: 'melting ice',
+                q18: 'liquid turns to gas',
+                q19: 'sublimation',
+                q20: 'spread out and move freely'
+            };
+
+            // Check answers
+            for (var q in answers) {
+                var selected = form[q].value;
+                if (selected === answers[q]) {
+                    score++;
+                }
+            }
+
+            // Display the score
+            var scoreMessage = `Your score is: ${score} out of 20`;
+
+            // Send score to WhatsApp
+            var phoneNumber = '+2348102341648';
+            var message = encodeURIComponent(scoreMessage);
+            var whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+
+            // Display the score
+            document.getElementById('score').innerHTML = scoreMessage;
+
+            // Redirect to WhatsApp
+            window.location.href = whatsappUrl;
+        }
+    </script>
+
+</body>
+</html>
